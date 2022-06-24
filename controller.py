@@ -94,7 +94,7 @@ class button :
             if not self.controller.fontCenterFix :
                 x -= (w/2)
 
-            draw.text((round(x), round(y)), text=self.caption, font=font, anchor="ma", fill=self.fontColor, align="center")
+            draw.text((round(x), round(y)), text=self.caption, font=font, anchor="ma", fill=self.fontColor, align="center", stroke_width=3, stroke_fill="black")
 
         nativeImage = PILHelper.to_native_format(self.controller.deck, image)
 
