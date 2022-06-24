@@ -1,0 +1,113 @@
+{
+    "images": ["blank", "obs.png", "white-micicon-mute.png", "white-micicon.png", "back.png", "polybar.png", "volume-up.png", "save.png", "desktop.png", "1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "red-skull.png"],
+    "ticks": [],
+    "dimensions": "5x3",
+    "created": 1646871751,
+    
+    "buttons": {
+        "0x2" : {
+            "caption":"Go back",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"back.png",
+            "actions":{"switchPage":"obs.json"}
+        },
+        "1x2" : {
+            "caption":"Record\nMic",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"white-micicon.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -m &"}
+        },
+        "2x2" : {
+            "caption":"Record\nDesktop",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"desktop.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -d &"}
+        },
+        "1x1" : {
+            "caption":"Kill\nMic",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"red-skull.png",
+            "actions":{"runCommand":"pkill -9 arecord && notify-send 'Killed arecord'"}
+        },
+        "2x1" : {
+            "caption":"Kill\nDesktop",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"red-skull.png",
+            "actions":{"runCommand":"pkill -9 parec && notify-send 'Killed parec'"}
+        },
+        "1x0" : {
+            "caption":"Replay\nMic",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"white-micicon.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -mr &"}
+        },
+        "2x0" : {
+            "caption":"Replay\nDesktop",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"desktop.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -dr &"}
+        },
+        "3x0" : {
+            "caption":"",
+            "fontSize":30,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"1.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -1 &"}
+        },
+        "4x0" : {
+            "caption":"",
+            "fontSize":30,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"2.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -2 &"}
+        },
+        "3x1" : {
+            "caption":"",
+            "fontSize":30,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"3.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -3 &"}
+        },
+        "4x1" : {
+            "caption":"",
+            "fontSize":30,
+            "color":"white",
+            "fontalignment":"bottom",
+            "background":"4.png",
+            "actions":{"runcommand":"/home/jackson/.scripts/sounds.sh -4 &"}
+        },
+        "3x2" : {
+            "caption":"",
+            "fontSize":30,
+            "color":"white",
+            "fontalignment":"bottom",
+            "background":"5.png",
+            "actions":{"runcommand":"/home/jackson/.scripts/sounds.sh -5 &"}
+        },
+        "4x2" : {
+            "caption":"",
+            "fontSize":30,
+            "color":"white",
+            "fontalignment":"bottom",
+            "background":"6.png",
+            "actions":{"runcommand":"/home/jackson/.scripts/sounds.sh -6 &"}
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "images": ["blank", "back.png"],
+    "ticks": [],
+    "dimensions": "5x3",
+    "created": 1646871751,
+    
+    "buttons": {
+        "0x0" : {
+            "caption":"Kill\nXdotool",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -k"}
+        },
+        "1x0" : {
+            "caption":"750ms\nGrinder",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -m &"}
+        },
+        "1x1" : {
+            "caption":"3000ms\nGrinder",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -m 3000 &"}
+        },
+        "2x0" : {
+            "caption":"Go back",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"back.png",
+            "actions":{"switchPage":"main.json"}
+        }
+    }
+}

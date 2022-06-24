@@ -1,0 +1,57 @@
+{
+    "images": ["blank", "obs.png", "white-micicon-mute.png", "white-micicon.png", "back.png", "polybar.png", "volume-up.png", "save.png", "soundux.png", "desktop.png"],
+    "ticks": [],
+    "dimensions": "5x3",
+    "created": 1646871751,
+    
+    "buttons": {
+        "0x0" : {
+            "caption":"Go back",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"back.png",
+            "actions":{"switchPage":"main.json"}
+        },
+        "0x1" : {
+            "caption":"Left",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"polybar.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/movetray.sh"}
+        },
+        "0x2" : {
+            "caption":"Sound\nBoard",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"soundux.png",
+            "actions":{"switchPage":"sounds.json"}
+        },
+        "1x0" : {
+            "caption":"Save\nReplay",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"save.png",
+            "actions":{"runCommand":"wmctrl -a OBS && xdotool key F10"}
+        },
+        "3x0" : {
+            "caption":"Full\nDesktop",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"desktop.png",
+            "actions":{"runCommand":"wmctrl -a OBS && xdotool key alt+F12"}
+        },
+        "4x0" : {
+            "caption":"BRB",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"blank",
+            "actions":{"runCommand":"wmctrl -a OBS && xdotool key alt+F11"}
+        }
+    }
+}

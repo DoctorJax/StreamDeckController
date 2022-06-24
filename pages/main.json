@@ -1,0 +1,51 @@
+{
+    "images": ["blank", "obs.png", "note.png", "click.png", "headphones.png", "earbuds.png", "white-micicon-mute.png", "white-micicon.png"],
+    "ticks": ["micmute.py", "sinktoggle.py"],
+    "dimensions": "5x3",
+    "created": 1646871751,
+    
+    "buttons": {
+        "0x0" : {
+            "caption":"Recording",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"obs.png",
+            "actions":{"switchPage":"obs.json"}
+        },
+        "1x0" : {
+            "caption":"Music",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"note.png",
+            "actions":{"switchPage":"music.json"}
+        },
+        "2x0" : {
+            "caption":"Macros",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"click.png",
+            "actions":{"switchPage":"macros.json"}
+        },
+        "0x2" : {
+            "caption":"",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"blank",
+            "actions":{},
+            "ticks":{"sinktoggle.py":"audioswap"}
+        },
+        "4x2" : {
+            "caption":"",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"blank",
+            "actions":{},
+            "ticks":{"micmute.py":"micmute"}
+        }
+    }
+}

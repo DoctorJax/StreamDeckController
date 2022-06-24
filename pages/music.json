@@ -1,0 +1,121 @@
+{
+    "images": ["blank", "back.png", "play.png", "left.png", "right.png", "volume-down.png", "volume-up.png", "streambeats.png", "reload.png", "spotify.png"],
+    "ticks": [],
+    "dimensions": "5x3",
+    "created": 1646871751,
+    
+    "buttons": {
+        "1x0" : {
+            "caption":"Go back",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"bottom",
+            "background":"back.png",
+            "actions":{"switchPage":"main.json"}
+        },
+        "2x0" : {
+            "caption":"50%",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"mpc volume 50"}
+        },
+        "3x0" : {
+            "caption":"60%",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"mpc volume 60"}
+        },
+        "4x0" : {
+            "caption":"70%",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"mpc volume 70"}
+        },
+        "0x1" : {
+            "caption":"",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"volume-down.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -d"}
+        },
+        "1x1" : {
+            "caption":"",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"left.png",
+            "actions":{"runCommand":"mpc prev"}
+        },
+        "2x1" : {
+            "caption":"",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"play.png",
+            "actions":{"runCommand":"mpc toggle"}
+        },
+        "3x1" : {
+            "caption":"",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"right.png",
+            "actions":{"runCommand":"mpc next"}
+        },
+        "4x1" : {
+            "caption":"",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"volume-up.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -u"}
+        },
+        "0x2" : {
+            "caption":"Favorites",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -f"}
+        },
+        "1x2" : {
+            "caption":"",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"streambeats.png",
+            "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -s"}
+        },
+        "2x2" : {
+            "caption":"",
+            "fontSize":20,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"play.png",
+            "actions":{"runCommand":"playerctl play-pause"}
+        },
+        "4x2" : {
+            "caption":"ncmpcpp",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -p &"}
+        },
+        "3x2" : {
+            "caption":"",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"spotify.png",
+            "actions":{"runCommand":"brave --profile-directory=Default https://open.spotify.com/ &"}
+        }
+    }
+}
