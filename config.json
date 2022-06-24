@@ -3,5 +3,5 @@
     "startingBrightness": 75,
     "deviceSerial": "AL48K2C58613",
     "font": "MesloLGLBold.ttf",
-    "fontCenterFix": false
+    "fontCenterFix": true
 }
