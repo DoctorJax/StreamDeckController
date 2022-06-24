@@ -9,7 +9,7 @@
             "caption":"Go back",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"back.png",
             "actions":{"switchPage":"obs.json"}
         },
@@ -17,7 +17,7 @@
             "caption":"Record\nMic",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"white-micicon.png",
             "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -m &"}
         },
@@ -25,7 +25,7 @@
             "caption":"Record\nDesktop",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"desktop.png",
             "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -d &"}
         },
@@ -33,7 +33,7 @@
             "caption":"Kill\nMic",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"red-skull.png",
             "actions":{"runCommand":"pkill -9 arecord && notify-send 'Killed arecord'"}
         },
@@ -41,7 +41,7 @@
             "caption":"Kill\nDesktop",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"red-skull.png",
             "actions":{"runCommand":"pkill -9 parec && notify-send 'Killed parec'"}
         },
@@ -49,7 +49,7 @@
             "caption":"Replay\nMic",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"white-micicon.png",
             "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -mr &"}
         },
@@ -57,7 +57,7 @@
             "caption":"Replay\nDesktop",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"desktop.png",
             "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -dr &"}
         },
@@ -65,7 +65,7 @@
             "caption":"",
             "fontSize":30,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"1.png",
             "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -1 &"}
         },
@@ -73,7 +73,7 @@
             "caption":"",
             "fontSize":30,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"2.png",
             "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -2 &"}
         },
@@ -81,7 +81,7 @@
             "caption":"",
             "fontSize":30,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"3.png",
             "actions":{"runCommand":"/home/jackson/.scripts/sounds.sh -3 &"}
         },
@@ -89,7 +89,7 @@
             "caption":"",
             "fontSize":30,
             "color":"white",
-            "fontalignment":"bottom",
+            "fontalignment":"center",
             "background":"4.png",
             "actions":{"runcommand":"/home/jackson/.scripts/sounds.sh -4 &"}
         },
@@ -97,7 +97,7 @@
             "caption":"",
             "fontSize":30,
             "color":"white",
-            "fontalignment":"bottom",
+            "fontalignment":"center",
             "background":"5.png",
             "actions":{"runcommand":"/home/jackson/.scripts/sounds.sh -5 &"}
         },
@@ -105,7 +105,7 @@
             "caption":"",
             "fontSize":30,
             "color":"white",
-            "fontalignment":"bottom",
+            "fontalignment":"center",
             "background":"6.png",
             "actions":{"runcommand":"/home/jackson/.scripts/sounds.sh -6 &"}
         }

@@ -9,7 +9,7 @@
             "caption":"Go back",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"back.png",
             "actions":{"switchPage":"main.json"}
         },
@@ -17,7 +17,7 @@
             "caption":"50%",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"mpc volume 50"}
         },
@@ -25,7 +25,7 @@
             "caption":"60%",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"mpc volume 60"}
         },
@@ -33,7 +33,7 @@
             "caption":"70%",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"mpc volume 70"}
         },
@@ -41,7 +41,7 @@
             "caption":"",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"volume-down.png",
             "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -d"}
         },
@@ -49,7 +49,7 @@
             "caption":"",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"left.png",
             "actions":{"runCommand":"mpc prev"}
         },
@@ -57,7 +57,7 @@
             "caption":"",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"play.png",
             "actions":{"runCommand":"mpc toggle"}
         },
@@ -65,7 +65,7 @@
             "caption":"",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"right.png",
             "actions":{"runCommand":"mpc next"}
         },
@@ -73,7 +73,7 @@
             "caption":"",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"volume-up.png",
             "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -u"}
         },
@@ -81,7 +81,7 @@
             "caption":"Favorites",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -f"}
         },
@@ -89,7 +89,7 @@
             "caption":"",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"streambeats.png",
             "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -s"}
         },
@@ -97,7 +97,7 @@
             "caption":"",
             "fontSize":20,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"play.png",
             "actions":{"runCommand":"playerctl play-pause"}
         },
@@ -105,7 +105,7 @@
             "caption":"ncmpcpp",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -p &"}
         },
@@ -113,7 +113,7 @@
             "caption":"",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"spotify.png",
             "actions":{"runCommand":"brave --profile-directory=Default https://open.spotify.com/ &"}
         }

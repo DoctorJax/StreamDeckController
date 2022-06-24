@@ -9,7 +9,7 @@
             "caption":"Recording",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"obs.png",
             "actions":{"switchPage":"obs.json"}
         },
@@ -17,7 +17,7 @@
             "caption":"Music",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"note.png",
             "actions":{"switchPage":"music.json"}
         },
@@ -25,7 +25,7 @@
             "caption":"Macros",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"click.png",
             "actions":{"switchPage":"macros.json"}
         },
@@ -33,7 +33,7 @@
             "caption":"",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"blank",
             "actions":{},
             "ticks":{"sinktoggle.py":"audioswap"}
@@ -42,7 +42,7 @@
             "caption":"",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"blank",
             "actions":{},
             "ticks":{"micmute.py":"micmute"}

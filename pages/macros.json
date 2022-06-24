@@ -9,7 +9,7 @@
             "caption":"Kill\nXdotool",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -k"}
         },
@@ -17,7 +17,7 @@
             "caption":"750ms\nGrinder",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -m &"}
         },
@@ -25,7 +25,7 @@
             "caption":"3000ms\nGrinder",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"center",
+            "fontAlignment":"top",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -m 3000 &"}
         },
@@ -33,7 +33,7 @@
             "caption":"Go back",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"bottom",
+            "fontAlignment":"center",
             "background":"back.png",
             "actions":{"switchPage":"main.json"}
         }
