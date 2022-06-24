@@ -1,7 +1,7 @@
 {
-    "startingPage": "welcome.json",
+    "startingPage": "main.json",
     "startingBrightness": 75,
-    "deviceSerial": "selectOnStartup",
-    "font": "yourFont.ttf",
+    "deviceSerial": "AL48K2C58613",
+    "font": "MesloLGLBold.ttf",
     "fontCenterFix": false
 }
