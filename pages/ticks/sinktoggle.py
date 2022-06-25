@@ -2,14 +2,14 @@ import subprocess
 import os
 from PIL import Image
 
-icon = "/home/jackson/StreamDeckController/pages/imgs/example/white.jpg"
+icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/example/white.jpg"
 
 def audioStatus():
     output = subprocess.getoutput(r'pactl get-default-sink | grep -o "CORSAIR"')
     if output == "":
-        icon = "/home/jackson/StreamDeckController/pages/imgs/earbuds.png"
+        icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/earbuds.png"
     elif output == "CORSAIR":
-        icon = "/home/jackson/StreamDeckController/pages/imgs/headphones.png"
+        icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/headphones.png"
     return icon
 
 def nextTickWait(coords, page, serial):
