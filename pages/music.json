@@ -19,7 +19,7 @@
             "color":"white",
             "fontAlignment":"top",
             "background":"blank",
-            "actions":{"runCommand":"mpc volume 50"}
+            "actions":{"runCommand":"mpc volume 50 && notify-send -t 2000 MPD 50%"}
         },
         "3x0" : {
             "caption":"60%",
@@ -27,7 +27,7 @@
             "color":"white",
             "fontAlignment":"top",
             "background":"blank",
-            "actions":{"runCommand":"mpc volume 60"}
+            "actions":{"runCommand":"mpc volume 60 && notify-send -t 2000 MPD 60%"}
         },
         "4x0" : {
             "caption":"70%",
@@ -35,7 +35,7 @@
             "color":"white",
             "fontAlignment":"top",
             "background":"blank",
-            "actions":{"runCommand":"mpc volume 70"}
+            "actions":{"runCommand":"mpc volume 70 && notify-send -t 2000 MPD 70%"}
         },
         "0x1" : {
             "caption":"",
