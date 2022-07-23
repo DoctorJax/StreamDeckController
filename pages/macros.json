@@ -36,6 +36,22 @@
             "fontAlignment":"center",
             "background":"back.png",
             "actions":{"switchPage":"main.json"}
+        },
+        "3x0" : {
+            "caption":"Right\nSpam",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -r 20 spam &"}
+        },
+        "4x0" : {
+            "caption":"Right\nHold",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -r 0 hold &"}
         }
     }
 }
