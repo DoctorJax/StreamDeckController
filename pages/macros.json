@@ -52,6 +52,14 @@
             "fontAlignment":"center",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -r 0 hold &"}
+        },
+        "1x2" : {
+            "caption":"Left\nHold",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -l &"}
         }
     }
 }
