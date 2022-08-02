@@ -2,9 +2,8 @@ import subprocess
 import os
 from PIL import Image
 
-icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/example/white.jpg"
-
 def mutedStatus():
+    icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/white-micicon.png"
     output = subprocess.getoutput(r'amixer get Capture | grep -o "\[on\]"')
     if output == "":
         icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/white-micicon-mute.png"
