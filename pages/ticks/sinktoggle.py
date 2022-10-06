@@ -12,6 +12,17 @@ def audioStatus():
         icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/headphones.png"
     return icon
 
+def batteryStatus():
+    output = subprocess.getoutput(r'pactl get-default-sink | grep -o "CORSAIR"')
+    if output == "":
+        battery = ""
+    elif output == "CORSAIR":
+        battery = subprocess.getoutput(r"headsetcontrol -b | grep Battery | awk -F ' ' '{ print $2 }'")
+        if battery == "Unavailable":
+            battery = "Off"
+    return battery
+
+
 def nextTickWait(coords, page, serial):
     return 1
 
@@ -19,10 +30,11 @@ def getKeyState(coords, page, serial, action):
     if action == "audioswap":
         global icon
         icon = audioStatus()
+        battery = batteryStatus()
 
-        return {"caption":"",
+        return {"caption": battery,
                 "background": Image.open(icon),
-                "fontSize": 12,
+                "fontSize": 13,
                 "fontColor": "white",
                 "actions": {}}
 
