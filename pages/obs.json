@@ -1,6 +1,6 @@
 {
     "images": ["blank", "obs.png", "white-micicon-mute.png", "white-micicon.png", "back.png", "polybar.png", "volume-up.png", "save.png", "soundux.png", "desktop.png"],
-    "ticks": [],
+    "ticks": ["micmute.py"],
     "dimensions": "5x3",
     "created": 1646871751,
     
@@ -13,45 +13,54 @@
             "background":"back.png",
             "actions":{"switchPage":"main.json"}
         },
-        "0x1" : {
-            "caption":"Left",
-            "fontSize":13,
-            "color":"white",
-            "fontAlignment":"center",
-            "background":"polybar.png",
-            "actions":{"runCommand":"/home/jackson/.scripts/movetray.sh"}
-        },
         "0x2" : {
             "caption":"Sound\nBoard",
             "fontSize":13,
             "color":"white",
             "fontAlignment":"center",
-            "background":"soundux.png",
+            "background":"volume-up.png",
             "actions":{"switchPage":"sounds.json"}
         },
-        "1x0" : {
+        "4x0" : {
+            "caption":"BRB",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"obs-cli scene current BRB"}
+        },
+        "4x1" : {
+            "caption":"Desktop",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"obs-cli scene current Desktop"}
+        },
+        "4x2" : {
+            "caption":"Full\nCamera",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"obs-cli scene current FullCamera"}
+        },
+        "0x1" : {
             "caption":"Save\nReplay",
             "fontSize":13,
             "color":"white",
             "fontAlignment":"center",
             "background":"save.png",
-            "actions":{"runCommand":"wmctrl -a OBS && xdotool key F10"}
+            "actions":{"runCommand":"obs-cli replaybuffer save"}
         },
-        "3x0" : {
-            "caption":"Full\nDesktop",
+        "3x2" : {
+            "caption":"",
             "fontSize":13,
             "color":"white",
             "fontAlignment":"center",
-            "background":"desktop.png",
-            "actions":{"runCommand":"wmctrl -a OBS && xdotool key alt+F12"}
-        },
-        "4x0" : {
-            "caption":"BRB",
-            "fontSize":20,
-            "color":"white",
-            "fontAlignment":"center",
             "background":"blank",
-            "actions":{"runCommand":"wmctrl -a OBS && xdotool key alt+F11"}
+            "actions":{},
+            "ticks":{"micmute.py":"micmute"}
         }
     }
 }
