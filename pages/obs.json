@@ -27,7 +27,7 @@
             "color":"white",
             "fontAlignment":"center",
             "background":"blank",
-            "actions":{"runCommand":"obs-cli scene current BRB"}
+            "actions":{"runCommand":"$HOME/.local/share/go/bin/obs-cli scene current BRB"}
         },
         "4x1" : {
             "caption":"Desktop",
@@ -35,7 +35,7 @@
             "color":"white",
             "fontAlignment":"center",
             "background":"blank",
-            "actions":{"runCommand":"obs-cli scene current Desktop"}
+            "actions":{"runCommand":"$HOME/.local/share/go/bin/obs-cli scene current Desktop"}
         },
         "4x2" : {
             "caption":"Full\nCamera",
@@ -43,7 +43,7 @@
             "color":"white",
             "fontAlignment":"center",
             "background":"blank",
-            "actions":{"runCommand":"obs-cli scene current FullCamera"}
+            "actions":{"runCommand":"$HOME/.local/share/go/bin/obs-cli scene current FullCamera"}
         },
         "0x1" : {
             "caption":"Save\nReplay",
@@ -51,7 +51,7 @@
             "color":"white",
             "fontAlignment":"center",
             "background":"save.png",
-            "actions":{"runCommand":"obs-cli replaybuffer save"}
+            "actions":{"runCommand":"$HOME/.local/share/go/bin/obs-cli replaybuffer save"}
         },
         "3x2" : {
             "caption":"",
