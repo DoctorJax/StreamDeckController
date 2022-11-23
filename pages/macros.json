@@ -6,12 +6,20 @@
     
     "buttons": {
         "0x0" : {
-            "caption":"Kill\nXdotool",
+            "caption":"Kill\nYdotool",
             "fontSize":13,
             "color":"white",
             "fontAlignment":"center",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -k"}
+        },
+        "0x1" : {
+            "caption":"Start\nYdotool",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"/home/jackson/.scripts/veryclicky.sh -s"}
         },
         "1x0" : {
             "caption":"750ms\nGrinder",
