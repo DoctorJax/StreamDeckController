@@ -5,6 +5,14 @@
     "created": 1646871751,
     
     "buttons": {
+        "0x0" : {
+            "caption":"Select\nPlaylist",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{"runCommand":"kitty --class MusicSelect zsh -c '/home/jackson/.scripts/mpdvolumenotif.sh -sp' &"}
+        },
         "1x0" : {
             "caption":"Go back",
             "fontSize":13,
@@ -78,10 +86,10 @@
             "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -u"}
         },
         "0x2" : {
-            "caption":"Favorites",
+            "caption":"Favorites\nRandom",
             "fontSize":13,
             "color":"white",
-            "fontAlignment":"top",
+            "fontAlignment":"center",
             "background":"blank",
             "actions":{"runCommand":"/home/jackson/.scripts/mpdvolumenotif.sh -f"}
         },
