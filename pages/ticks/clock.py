@@ -1,7 +1,7 @@
 from time import localtime, strftime
 
 format = 2
-formats = ["%I:%M", "%H:%M", "%m-%d\n%I:%M:%S"]
+formats = ["%I:%M", "%H:%M", "%I:%M:%S\n%m-%d"]
 
 def nextTickWait(coords, page, serial) :
     return 1 #Time until the next tick in seconds
@@ -11,7 +11,7 @@ def getKeyState(coords, page, serial, action) : #Runs every tick
 
     if action == "clock" :
         return {"caption": strftime(formats[format], localtime()),
-                "fontSize": 14,
+                "fontSize": 13,
                 "fontColor": "white",
                 "actions": {}}
 
