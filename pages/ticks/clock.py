@@ -1,7 +1,7 @@
 from time import localtime, strftime
+import subprocess
 
-format = 2
-formats = ["%I:%M", "%H:%M", "%I:%M:%S\n%m-%d"]
+formats = ["%I", "%M", "%S"]
 
 def nextTickWait(coords, page, serial) :
     return 1 #Time until the next tick in seconds
@@ -9,17 +9,23 @@ def nextTickWait(coords, page, serial) :
 def getKeyState(coords, page, serial, action) : #Runs every tick
     #print(coords, page, serial, action)
 
-    if action == "clock" :
-        return {"caption": strftime(formats[format], localtime()),
-                "fontSize": 13,
+    if action == "hour" :
+        return {"caption": strftime(formats[0], localtime()),
+                "fontSize": 25,
                 "fontColor": "white",
                 "actions": {}}
 
-def keyPress(coords, page, serial) : #Cycle through time formats on keypress
-    global format
-    format += 1
+    if action == "minute" :
+        return {"caption": strftime(formats[1], localtime()),
+                "fontSize": 25,
+                "fontColor": "white",
+                "actions": {}}
 
-    if format+1 > len(formats) :
-        format = 0
+    if action == "second" :
+        return {"caption": strftime(formats[2], localtime()),
+                "fontSize": 25,
+                "fontColor": "white",
+                "actions": {}}
 
-#print("Hello, world!")
+def keyPress(coords, page, serial) :
+    subprocess.Popen('notify-send "Stream Deck" "The current time is: $(date)"', shell=True)

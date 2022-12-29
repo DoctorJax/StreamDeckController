@@ -47,14 +47,32 @@
             "actions":{},
             "ticks":{"micmute.py":"micmute"}
         },
-        "4x0" : {
+        "1x2" : {
             "caption":"",
             "fontSize":13,
             "color":"white",
             "fontAlignment":"center",
             "background":"blank",
             "actions":{},
-            "ticks":{"clock.py":"clock"}
+            "ticks":{"clock.py":"hour"}
+        },
+        "2x2" : {
+            "caption":"",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{},
+            "ticks":{"clock.py":"minute"}
+        },
+        "3x2" : {
+            "caption":"",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{},
+            "ticks":{"clock.py":"second"}
         }
     }
 }
