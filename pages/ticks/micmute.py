@@ -1,5 +1,4 @@
 import subprocess
-import os
 from PIL import Image
 
 def mutedStatus():

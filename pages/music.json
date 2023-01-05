@@ -1,6 +1,6 @@
 {
     "images": ["blank", "back.png", "play.png", "left.png", "right.png", "volume-down.png", "volume-up.png", "streambeats.png", "reload.png", "spotify.png"],
-    "ticks": [],
+    "ticks": ["music.py"],
     "dimensions": "5x3",
     "created": 1646871751,
     
@@ -66,8 +66,9 @@
             "fontSize":20,
             "color":"white",
             "fontAlignment":"top",
-            "background":"play.png",
-            "actions":{"runCommand":"mpc toggle"}
+            "background":"blank",
+            "actions":{},
+            "ticks":{"music.py":"music"}
         },
         "3x1" : {
             "caption":"",
