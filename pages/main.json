@@ -73,6 +73,15 @@
             "background":"blank",
             "actions":{},
             "ticks":{"clock.py":"second"}
+        },
+        "2x1" : {
+            "caption":"",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{},
+            "ticks":{"clock.py":"date"}
         }
     }
 }

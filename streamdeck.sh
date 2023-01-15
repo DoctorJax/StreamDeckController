@@ -1,8 +1,11 @@
 #!/bin/bash
 
 streamdeckstart() {
+    kill $(cat /tmp/.streamdeck.sh.pid)
+    reset
     cd ~/GitRepos/.StreamDeckController || exit
-    python main.py
+    python main.py &
+    echo $! > /tmp/.streamdeck.sh.pid
 }
 
 reset() {

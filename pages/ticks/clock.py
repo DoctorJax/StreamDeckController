@@ -27,5 +27,11 @@ def getKeyState(coords, page, serial, action) : #Runs every tick
                 "fontColor": "white",
                 "actions": {}}
 
+    if action == "date" :
+        return {"caption": strftime("%b %d\n%A", localtime()),
+                "fontSize": 15,
+                "fontColor": "white",
+                "actions": {}}
+
 def keyPress(coords, page, serial) :
     subprocess.Popen('notify-send "Stream Deck" "The current time is: $(date)"', shell=True)
