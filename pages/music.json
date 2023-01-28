@@ -123,8 +123,8 @@
             "fontSize":13,
             "color":"white",
             "fontAlignment":"top",
-            "background":"spotify.png",
-            "actions":{"runCommand":"brave --profile-directory=Default https://open.spotify.com/ &"}
+            "background":"reload.png",
+            "actions":{"runCommand":"mpc repeat && mpc single && notify-send -t 2000 MPD 'Repeat Toggled'"}
         }
     }
 }
