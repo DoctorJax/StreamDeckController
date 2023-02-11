@@ -2,12 +2,12 @@ import subprocess
 from PIL import Image
 
 def mpcStatus():
-    icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/play.png"
+    icon = "./pages/imgs/play.png"
     output = subprocess.getoutput(r'mpc | grep -ow "playing"')
     if output == "":
-        icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/play.png"
+        icon = "./pages/imgs/play.png"
     elif output == "playing":
-        icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/pause.png"
+        icon = "./pages/imgs/pause.png"
     return icon
 
 def nextTickWait(coords, page, serial):

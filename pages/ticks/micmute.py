@@ -2,12 +2,12 @@ import subprocess
 from PIL import Image
 
 def mutedStatus():
-    icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/white-micicon.png"
+    icon = "./pages/imgs/white-micicon.png"
     output = subprocess.getoutput(r'amixer get Capture | grep -o "\[on\]"')
     if output == "":
-        icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/white-micicon-mute.png"
+        icon = "./pages/imgs/white-micicon-mute.png"
     elif output == "[on]":
-        icon = "/home/jackson/GitRepos/.StreamDeckController/pages/imgs/white-micicon.png"
+        icon = "./pages/imgs/white-micicon.png"
     return icon
 
 def nextTickWait(coords, page, serial):
