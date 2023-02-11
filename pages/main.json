@@ -1,6 +1,6 @@
 {
     "images": ["blank", "obs.png", "note.png", "click.png", "headphones.png", "earbuds.png", "white-micicon-mute.png", "white-micicon.png"],
-    "ticks": ["micmute.py", "sinktoggle.py", "clock.py"],
+    "ticks": ["micmute.py", "sinktoggle.py", "clock.py", "music.py"],
     "dimensions": "5x3",
     "created": 1646871751,
     
@@ -82,6 +82,15 @@
             "background":"blank",
             "actions":{},
             "ticks":{"clock.py":"date"}
+        },
+        "4x0" : {
+            "caption":"",
+            "fontSize":13,
+            "color":"white",
+            "fontAlignment":"center",
+            "background":"blank",
+            "actions":{},
+            "ticks":{"music.py":"music"}
         }
     }
 }
