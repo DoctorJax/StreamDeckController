@@ -5,23 +5,24 @@ from PIL import Image
 icon = "./pages/imgs/example/white.jpg"
 
 def audioStatus():
-    output = subprocess.getoutput(r'pactl get-default-sink | grep -o "CORSAIR"')
-    if output == "":
-        icon = "./pages/imgs/earbuds.png"
-    elif output == "CORSAIR":
+    output = subprocess.getoutput(r'pactl get-default-sink | grep -Eo "CORSAIR|Dell"')
+    if output == "CORSAIR":
         icon = "./pages/imgs/headphones.png"
+    elif output == "Dell":
+        icon = "./pages/imgs/speaker.png"
+    else:
+        icon = "./pages/imgs/earbuds.png"
     return icon
 
 def batteryStatus():
-    output = subprocess.getoutput(r'pactl get-default-sink | grep -o "CORSAIR"')
-    if output == "":
-        battery = ""
-    elif output == "CORSAIR":
+    output = subprocess.getoutput(r'pactl get-default-sink | grep -Eo "CORSAIR|Dell"')
+    if output == "CORSAIR":
         battery = subprocess.getoutput(r"headsetcontrol -b | grep Battery | awk -F ' ' '{ print $2 }'")
         if battery == "Unavailable":
             battery = "Off"
+    else:
+        battery = ""
     return battery
-
 
 def nextTickWait(coords, page, serial):
     return 1
@@ -39,7 +40,10 @@ def getKeyState(coords, page, serial, action):
                 "actions": {}}
 
 def keyPress(coords, page, serial):
-    global icon
     icon = audioStatus()
+    output = subprocess.getoutput(r'pactl get-default-sink | grep -Eo "CORSAIR|Dell"')
 
-    subprocess.Popen('/home/jackson/.scripts/audioswap.sh -t', shell=True)
+    if output == "Dell":
+        subprocess.Popen('/home/jackson/.scripts/audioswap.sh -s', shell=True)
+    else:
+        subprocess.Popen('/home/jackson/.scripts/audioswap.sh -t', shell=True)
