@@ -1,6 +1,6 @@
 {
     "startingPage": "main.json",
-    "startingBrightness": 30,
+    "startingBrightness": 20,
     "deviceSerial": "AL48K2C58613",
     "font": "MesloLGLBold.ttf",
     "fontCenterFix": true
