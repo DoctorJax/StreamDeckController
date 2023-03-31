@@ -34,4 +34,4 @@ def getKeyState(coords, page, serial, action) : #Runs every tick
                 "actions": {}}
 
 def keyPress(coords, page, serial) :
-    subprocess.Popen('notify-send "Stream Deck" "The current time is: $(date)"', shell=True)
+    subprocess.Popen('kitty --class DateTime --hold bash -c "watch -t -n1 date +%m-%d-%Y_%T" &', shell=True)
